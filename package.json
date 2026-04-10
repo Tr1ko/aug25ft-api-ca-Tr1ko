@@ -3,24 +3,34 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"start": "node ./bin/www"
+		"start": "node ./bin/www",
+		"test": "jest"
 	},
 	"dependencies": {
 		"cookie-parser": "~1.4.4",
+		"crypto": "^1.0.1",
 		"debug": "~2.6.9",
 		"dotenv": "^16.0.3",
 		"ejs": "^3.1.8",
 		"express": "^4.18.2",
 		"http-errors": "~1.6.3",
+		"jsend": "^1.1.0",
+		"jsonwebtoken": "^9.0.3",
 		"morgan": "~1.9.1",
 		"mysql": "^2.18.1",
 		"mysql2": "^3.1.2",
-		"sequelize": "^6.29.0"
+		"sequelize": "^6.29.0",
+		"swagger-jsdoc": "^6.2.8",
+		"swagger-ui-express": "^5.0.1"
 	},
 	"description": "![](http://143.42.108.232/pvt/Noroff-64.png)\r # Noroff\r ## Back-end Development Year 1\r ### REST API - Course Assignment 1 <sup>V2</sup>",
 	"main": "app.js",
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
-	"type": "commonjs"
+	"type": "commonjs",
+	"devDependencies": {
+		"jest": "^30.3.0",
+		"supertest": "^7.2.2"
+	}
 }
