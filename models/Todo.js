@@ -19,6 +19,7 @@ module.exports = (sequelize, Sequelize) => {
 	Todo.associate = function (models) {
 		Todo.belongsTo(models.Category, { foreignKey: { allowNull: false } });
 		Todo.belongsTo(models.Status, { foreignKey: { allowNull: false } });
+		Todo.belongsTo(models.User, { foreignKey: { allowNull: false} });
 	};
 
 	return Todo;
